@@ -16,28 +16,73 @@
   font-style: normal;
   font-variation-settings:
     "GRAD" 0;
+  margin:0;
+}
+
+h1 {
+    font-weight: 800;
+    font-size:2.5rem;
+}
+
+h2, h3, h4, h5, h6 {
+    font-weight: 600;
 }
 
 /* General Styling */
 html {
+    /* background-image:url("img/bgmountains.jpg");
+    background-size:cover; */
+    background-color:var(--secondary-colour);
+}
+
+section {
+    margin:1.5rem;
+}
+
+header, main {
     background-color:var(--primary-colour);
+    display:grid;
+    grid-column:1fr 1fr;
+    justify-items:center;
+    padding-bottom:3.5rem;
+}
+
+input {
+    width:84%;
+    margin:1rem;
+    padding:1rem;
+}
+
+button {
+    border:none;
+    background-color:var(--accent-colour);
+    color:var(--secondary-colour);
+    width:90%;
+    margin:1rem;
+    padding:1rem;
+}
+
+button:hover {
+    background-color:var(--secondary-colour);
+    color:var(--accent-colour);
 }
 
 footer {
-    background-color:var(--tertiary-colour)
+    background-color:var(--accent-colour);
+    padding-bottom:2.5rem;
 }
 
 .footer-links {
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:20px;
-    padding:10px 0;
+    padding:10px;
 }
 
 .footer-links a img {
     width:30px;
     height:30px;
+    margin:1rem;
     fill:var(--secondary-colour);
     /*
     Source - https://stackoverflow.com/a/53336754
