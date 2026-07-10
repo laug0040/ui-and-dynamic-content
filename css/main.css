@@ -22,3 +22,29 @@
 html {
     background-color:var(--primary-colour);
 }
+
+footer {
+    background-color:var(--tertiary-colour)
+}
+
+.footer-links {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    padding:10px 0;
+}
+
+.footer-links a img {
+    width:30px;
+    height:30px;
+    fill:var(--secondary-colour);
+    /*
+    Source - https://stackoverflow.com/a/53336754
+    Posted by Manish Menaria, modified by community. See post 'Timeline' for change history
+    Retrieved 2026-07-10, License - CC BY-SA 4.0
+    Used this to help me change the colour of my SVG element.
+    */
+    filter:invert(28%) sepia(74%) saturate(1186%) hue-rotate(331deg) brightness(90%) contrast(84%);
+
+}
