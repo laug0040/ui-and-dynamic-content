@@ -17,6 +17,7 @@
   font-variation-settings:
     "GRAD" 0;
   margin:0;
+  color:var(--accent-colour);
 }
 
 h1 {
@@ -45,6 +46,19 @@ header, main {
     grid-column:1fr 1fr;
     justify-items:center;
     padding-bottom:3.5rem;
+}
+
+header img {
+    width:25%;
+    margin:0.5rem;
+    margin-bottom:1.5rem;
+    /*
+    Source - https://stackoverflow.com/a/53336754
+    Posted by Manish Menaria, modified by community. See post 'Timeline' for change history
+    Retrieved 2026-07-10, License - CC BY-SA 4.0
+    Used this to help me change the colour of my SVG element.
+    */
+    filter: invert(14%) sepia(3%) saturate(2413%) hue-rotate(318deg) brightness(105%) contrast(92%);
 }
 
 input {
