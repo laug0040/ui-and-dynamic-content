@@ -65,6 +65,9 @@ input {
     width:84%;
     margin:1rem;
     padding:1rem;
+    border:none;
+    background-color:var(--accent-colour);
+    color:var(--secondary-colour);
 }
 
 button {
